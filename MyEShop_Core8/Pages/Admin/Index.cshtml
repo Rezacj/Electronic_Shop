@@ -1,0 +1,44 @@
+﻿@page
+@model MyEShop_Core8.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = "لیست کالا ها";
+}
+
+<h1>لیست کالا ها</h1>
+<hr />
+
+<p>
+    <a asp-page="Add" class="myButton">افزودن کالا</a>
+</p>
+
+<table style="width:100%">
+    <thead>
+        <tr>
+            <th>تصویر</th>
+            <th>نام</th>
+            <th>قیمت</th>
+            <th>دستورات</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model.Products)
+        {
+            <tr>
+                <td>
+                    <img src="/img/4.jpg" style="width:100px ; border:1px solid gray; padding 3px " />
+                </td>
+
+                <td>@i.name</td>
+
+                <td>@i.items.price</td>
+
+                <td>
+                    <a asp-page="Edit1" asp-route-id="@i.id">ویرایش</a>
+                    <a asp-page="Delete" asp-route-id="@i.id">حذف</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

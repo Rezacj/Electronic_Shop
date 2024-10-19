@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\MyEShop_Core8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E992968-5618-48BF-97AE-402220C496C3}|MyEShop_Core8\\MyEShop_Core8.csproj|e:\\projects\\myeshop_core8\\myeshop_core8\\data\\myeshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E992968-5618-48BF-97AE-402220C496C3}|MyEShop_Core8\\MyEShop_Core8.csproj|solutionrelative:myeshop_core8\\data\\myeshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyEShopContext.cs",
+              "DocumentMoniker": "E:\\Projects\\MyEShop_Core8\\MyEShop_Core8\\Data\\MyEShopContext.cs",
+              "RelativeDocumentMoniker": "MyEShop_Core8\\Data\\MyEShopContext.cs",
+              "ToolTip": "E:\\Projects\\MyEShop_Core8\\MyEShop_Core8\\Data\\MyEShopContext.cs",
+              "RelativeToolTip": "MyEShop_Core8\\Data\\MyEShopContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T18:32:03.957Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+﻿@page
+@model MyEShop_Core8.Pages.Admin.AddModel
+@{
+    // ViewData["Title"] = "ثبت";
+}
+<link href="~/css/admin.css" rel="stylesheet" />
+<br />
+<h1>افزودن کالا</h1>
+<hr />
+<form method="post" enctype="multipart/form-data">
+    <dl class="dl-horizontal">
+        <dd></dd>
+        <dt>
+            <label asp-for="product.Name"></label>
+            <input asp-for="product.Name" class="form-control" style="width: 50%" />
+            <span asp-validation-for="product.Name"></span>
+        </dt>
+        <dd></dd>
+        <dt>
+            <label asp-for="product.Description"></label>
+            <textarea asp-for="product.Description" class="form-control" style="width: 50%"></textarea>
+            <span asp-validation-for="product.Description"></span>
+        </dt>
+        <dd></dd>
+        <dt>
+            <label asp-for="product.Price"></label>
+            <input asp-for="product.Price" class="form-control" style="width: 35%" />
+            <span asp-validation-for="product.Price"></span>
+        </dt>
+        <dd></dd>
+        <dt>
+            <label asp-for="product.QuantityInStock"></label>
+            <input asp-for="product.QuantityInStock" class="form-control" style="width: 5%" />
+            <span asp-validation-for="product.QuantityInStock"></span>
+        </dt>
+        <dd>گروه</dd>
+        <dt>
+            @foreach (var item in Model.product.Categories)
+            {
+                <p>
+                    <input type="checkbox" name="selectedGroups" value="@item.id" /> @item.name
+                </p>
+            }
+        </dt>
+        <dd></dd>
+        <hr />
+        <dt>
+            <input type="submit" class="btn btn-success" value="ثبت" style="width: 10%" />
+        </dt>
+    </dl>
+
+
+
+</form>

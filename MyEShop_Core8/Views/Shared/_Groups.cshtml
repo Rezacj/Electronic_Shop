@@ -1,0 +1,23 @@
+﻿@using MyEShop_Core8.Data.Repositories;
+@inject IGroupRepository _GroupRepository;
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-bs-toggle='dropdown' aria-haspopup="true" aria-expanded="false">گروه ها</a>
+    <div class="dropdown-menu" aria-labelledby="dropdown09">
+        @foreach (var item in _GroupRepository.GetAllCategories())
+        {
+            <a class="dropdown-item" href="/Group/@item.id/@item.name">@item.name</a>
+        }
+    </div>
+    @* <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle='dropdown' aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div> *@
+</li>
+

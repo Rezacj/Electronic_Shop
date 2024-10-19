@@ -1,0 +1,15 @@
+﻿@model Product
+
+
+<div class="col-4 py-2">
+    <div class="card shadow-sm mb-2 bg-white rounded">
+        <img src="/img/4.jpg" height="160" width="160" class="card-img-top img-thumbnail" />
+        <div class="card-body">
+            <h5 class="card-title">@Model.name</h5>
+            <a asp-action="Detail"
+               asp-controller="Home"
+               asp-route-id="@Model.id">جزئیات محصول</a>
+        </div>
+
+    </div>
+</div>

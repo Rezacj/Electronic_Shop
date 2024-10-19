@@ -1,0 +1,13 @@
+﻿@using MyEShop_Core8.Models
+@model IEnumerable<ShowGroupViewModel>
+
+<br />
+<ul class="list-group py-2 pr-2">
+@foreach (var item in Model)
+{
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+       <a href="/Group/@item.GroupId/@item.Name">@item.Name</a>
+        <span class="badge badge-primary badge-pill">@item.ProductCount</span>
+    </li>
+}
+</ul>

@@ -1,0 +1,31 @@
+﻿@model DetailViewModel
+
+@{
+    ViewData["Title"] = Model.Product.name;
+}
+
+<div>
+    <h1 class="display-5">@Model.Product.name</h1>
+    <hr />
+    <img src="~/img/6.jpg" height="" width="" class="img-thumbnail" />
+    
+    
+    <p class="text-justify">@Model.Product.description</p>
+    <p>@Model.Product.items.price</p>
+    
+    <dl>
+        @foreach (var item in Model.Categories)
+        {
+            <dt>@item.name</dt>
+            <dd>@item.description</dd>
+        
+        }
+    </dl>
+    <div>
+        <a class="btn btn-primary" asp-controller="Home"
+           asp-action="AddToCart"
+           asp-route-itemId="@Model.Product.items.id">افزودن به سبد خرید</a>
+    </div>
+</div>
+
+
