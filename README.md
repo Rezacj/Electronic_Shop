@@ -21,7 +21,8 @@
 - **ASP.NET Core 8**  
 - **EF Core**  
 - **Razor Pages**  
-- **HTML, CSS, JavaScript**  
+- **HTML, CSS, JavaScript**
+- **SQL Server** (برای مدیریت دیتابیس)  
 
 > **توجه:** داده‌های حساس هش نشده‌اند چون این نسخه برای تست است.
 
