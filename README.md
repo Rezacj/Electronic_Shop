@@ -38,6 +38,9 @@
 1. کلون کردن ریپوزیتوری:  
    ```bash
    git clone https://github.com/Rezacj/Electronic_Shop.git
+   
+   ```
+   ```bash
    cd Electronic_Shop
    ```
 2. اعمال مایگریشن:  
